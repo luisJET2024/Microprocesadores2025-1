@@ -6,14 +6,14 @@
 
 ; generamos un apartado donde almacenamos datos como pularmente lo conocemos como variables 
 
- .org 0005 ; dirección para datos en decimal
+ .org 0005 ; direcciÃ³n para datos en decimal
 
 msj1 .DB	"Ingrese su clave: &" ;recordado db como una variable y la caracteristica y el uso de & para limitar hasta donde semostraria el texto al usuario
 teclado .equ 01h
 pantalla .equ 00h
 password .db "1234"
 
-; crearemos la condición secuencial
+; crearemos la condiciÃ³n secuencial
 showmsj:
  ld a,(hl)
  cp '&' ;compara 
@@ -24,5 +24,4 @@ showmsj:
 termina:
 ret
 
-;poco profe pero eslo que entendi por ahora gracias por su atención y catedra
-.end
+;poco profe pero eslo que entendi por ahora gracias por su atenciÃ³n y catedra
